@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from '@/styles/realtors.module.scss';
+import Image from 'next/image';
 
 function Realtors() {
   return (
     <div className={styles.realtors}>
       <h3 className='heading-3'>Top 3 Realtors</h3>
       <div className={styles.realtors__list}>
-        <img
+        <Image
+          width={500}
+          height={500}
           src='/img/realtor-1.jpeg'
           alt='Realtor 1'
           className={styles.realtors__img}
@@ -16,7 +19,9 @@ function Realtors() {
           <p className={styles.realtors__sold}>245 houses sold</p>
         </div>
 
-        <img
+        <Image
+          width={500}
+          height={500}
           src='/img/realtor-2.jpeg'
           alt='Realtor 2'
           className={styles.realtors__img}
@@ -26,7 +31,9 @@ function Realtors() {
           <p className={styles.realtors__sold}>212 houses sold</p>
         </div>
 
-        <img
+        <Image
+          width={500}
+          height={500}
           src='/img/realtor-3.jpeg'
           alt='Realtor 3'
           className={styles.realtors__img}
